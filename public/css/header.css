@@ -1,14 +1,57 @@
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 3rem;
   text-align: center;
-  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+
+.header__favourites {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.782);
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+
+  padding-bottom: 2px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.898) 0 0);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+}
+
+.header__favourites:hover {
+  background-position: 100% 100%;
+  background-size: 100% 2px;
+}
+
+.header-favourites__pokeball {
+  margin: auto;
+  object-fit: contain;
+  width: 5rem;
+  height: 5rem;
 }
 
 @media (min-width: 1440px) {
   .header {
     padding: 2rem;
+    justify-content: space-between;
   }
 
   .header__logo {
     width: 30rem;
+  }
+
+  .header__favourites {
+    font-size: 3rem;
+  }
+
+  .header-favourites__pokeball {
+    width: 8rem;
+    height: 8rem;
   }
 }

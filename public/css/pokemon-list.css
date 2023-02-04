@@ -19,6 +19,15 @@
   padding: 1.2rem 1rem;
   background-color: rgba(255, 255, 255, 0.782);
   border-radius: 1.2rem;
+  position: relative;
+}
+
+.pokemon__link:link,
+.pokemon__link:visited,
+.pokemon__link:hover,
+.pokemon__link:active {
+  text-decoration: none;
+  color: initial;
 }
 
 .pokemon__image-container {
@@ -46,6 +55,11 @@
   font-size: 1.2rem;
 }
 
+.description__main-info {
+  display: flex;
+  justify-content: space-between;
+}
+
 .description__title {
   display: flex;
   flex-direction: column;
@@ -61,6 +75,28 @@
   font-size: 1.7rem;
   padding: 0.1rem 1.2rem;
   border-radius: 2rem;
+}
+
+.description__favourite {
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.1rem;
+}
+
+.description__heart {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 40;
+  font-size: 2rem;
+}
+
+.description__heart--selected {
+  fill: red;
+  stroke: none;
 }
 
 .change-page {

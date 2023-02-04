@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "vt323regular";
+  src: url("vt323-regular-webfont.woff2") format("woff2"),
+    url("vt323-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "VT323";
+}
+
+body {
+  background-color: rgb(195, 23, 23);
+}
+
+.app {
+  height: 100vh;
+  padding: 1rem;
+}

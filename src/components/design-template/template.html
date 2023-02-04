@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clari's pokeapi</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/32395a3ebd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../../public/css/style.css">
+  <link rel="stylesheet" href="../../../public/css/header.css">
+  <link rel="stylesheet" href="../../../public/css/search-bar.css">
+  <link rel="stylesheet" href="../../../public/css/pokemon-list.css">
+
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <img src="../../../public/assets/pokemon-logo.svg" alt="original pokemon logo" class="header__logo">
+    </header>
+    <main>
+      <section class="search-container">
+        <div class="search__input-container">
+          <h2 class="input__title">Find your pokemon</h2>
+          <input type="text" class="input__input-box">
+          <div class="input__pokemons-showed">
+            <p class="pokemons-showed__number">30/1000</p>
+            <button class="pokemons-showed__back-button"><i class="fa-solid fa-circle-left"></i></button>
+            <button class="pokemons-showed__next-button"><i class="fa-solid fa-circle-right"></i></button>
+          </div>
+        </div>
+      </section>
+      <section class="pokemon-list-container">
+        <ul class="pokemon-list">
+          <li class="list__pokemon">
+            <div class="pokemon__image-container">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif"
+                alt="bulbasaur" class="pokemon__image">
+            </div>
+            <div class="pokemon__description-container">
+              <div class="description__id-container">
+                <p class="description__id">#001</p>
+                <p class="description__exp">EXP: 64</p>
+              </div>
+              <div class="description__title">
+                <h3 class="description-title__pokemon-name">Bulbasaur</h3>
+                <p class="description-title__pokemon-type">Grass</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="list__pokemon">
+            <div class="pokemon__image-container">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/2.gif"
+                alt="bulbasaur" class="pokemon__image">
+            </div>
+            <div class="pokemon__description-container">
+              <div class="description__id-container">
+                <p class="description__id">#002</p>
+                <p class="description__exp">EXP: 64</p>
+              </div>
+              <div class="description__title">
+                <h3 class="description-title__pokemon-name">Ivysaur</h3>
+                <p class="description-title__pokemon-type">Grass</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="list__pokemon">
+            <div class="pokemon__image-container">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/3.gif"
+                alt="bulbasaur" class="pokemon__image">
+            </div>
+            <div class="pokemon__description-container">
+              <div class="description__id-container">
+                <p class="description__id">#003</p>
+                <p class="description__exp">EXP: 64</p>
+              </div>
+              <div class="description__title">
+                <h3 class="description-title__pokemon-name">Venusaur</h3>
+                <p class="description-title__pokemon-type">Grass</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="list__pokemon">
+            <div class="pokemon__image-container">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/4.gif"
+                alt="bulbasaur" class="pokemon__image">
+            </div>
+            <div class="pokemon__description-container">
+              <div class="description__id-container">
+                <p class="description__id">#004</p>
+                <p class="description__exp">EXP: 64</p>
+              </div>
+              <div class="description__title">
+                <h3 class="description-title__pokemon-name">Charmander</h3>
+                <p class="description-title__pokemon-type">Fire</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="list__pokemon">
+            <div class="pokemon__image-container">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/5.gif"
+                alt="bulbasaur" class="pokemon__image">
+            </div>
+            <div class="pokemon__description-container">
+              <div class="description__id-container">
+                <p class="description__id">#005</p>
+                <p class="description__exp">EXP: 64</p>
+              </div>
+              <div class="description__title">
+                <h3 class="description-title__pokemon-name">Charmeleon</h3>
+                <p class="description-title__pokemon-type">Fire</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="list__pokemon">
+            <div class="pokemon__image-container">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif"
+                alt="bulbasaur" class="pokemon__image">
+            </div>
+            <div class="pokemon__description-container">
+              <div class="description__id-container">
+                <p class="description__id">#006</p>
+                <p class="description__exp">EXP: 64</p>
+              </div>
+              <div class="description__title">
+                <h3 class="description-title__pokemon-name">Charizard</h3>
+                <p class="description-title__pokemon-type">Fire</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="change-page">
+          <button class="change-page__back-button"><i class="fa-solid fa-circle-left"></i></button>
+          <button class="change-page__next-button"><i class="fa-solid fa-circle-right"></i></button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+
+</html>

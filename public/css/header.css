@@ -1,0 +1,14 @@
+.header {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 1440px) {
+  .header {
+    padding: 2rem;
+  }
+
+  .header__logo {
+    width: 30rem;
+  }
+}

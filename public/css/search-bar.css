@@ -50,3 +50,32 @@
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.782);
 }
+
+@media (min-width: 1440px) {
+  .search-container {
+    padding: 2rem;
+  }
+
+  .search__input-container {
+    gap: 2rem;
+  }
+
+  .input__title {
+    font-size: 3.8rem;
+  }
+
+  .input__input-box {
+    font-size: 3rem;
+    padding: 1rem 3rem;
+  }
+
+  .input__pokemons-showed {
+    gap: 2rem;
+  }
+
+  .pokemons-showed__number,
+  .fa-circle-left,
+  .fa-circle-right {
+    font-size: 3rem;
+  }
+}

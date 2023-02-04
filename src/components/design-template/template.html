@@ -6,8 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clari's pokeapi</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/32395a3ebd.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../../../public/css/style.css">
   <link rel="stylesheet" href="../../../public/css/header.css">
+  <link rel="stylesheet" href="../../../public/css/search-bar.css">
 
 </head>
 
@@ -21,10 +24,12 @@
         <div class="search__input-container">
           <h2 class="input__title">Find your pokemon</h2>
           <input type="text" class="input__input-box">
-          <p class="input__pokemons-showed">30/1000</p>
+          <div class="input__pokemons-showed">
+            <p class="pokemons-showed__number">30/1000</p>
+            <button class="pokemons-showed__back-button"><i class="fa-solid fa-circle-left"></i></button>
+            <button class="pokemons-showed__next-button"><i class="fa-solid fa-circle-right"></i></button>
+          </div>
         </div>
-        <button class="search__back-button">back</button>
-        <button class="search__next-button">next</button>
       </section>
       <section class="pokemon-list-container">
         <ul class="pokemon-list">

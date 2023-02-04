@@ -2,15 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   width: fit-content;
-  gap: 1rem;
   justify-content: center;
-  margin-top: 3rem;
+  padding: 3rem 0;
 }
 
 .pokemon-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  gap: 3rem;
   width: fit-content;
   justify-content: center;
 }
@@ -61,4 +61,31 @@
   font-size: 1.7rem;
   padding: 0.1rem 1.2rem;
   border-radius: 2rem;
+}
+
+.change-page {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .pokemon-list-container {
+    padding: 2rem 3rem 0rem;
+  }
+
+  .pokemon-list {
+    gap: 3rem 4.65rem;
+    margin-bottom: 3rem;
+    justify-content: flex-start;
+  }
+
+  .change-page {
+    display: flex;
+    gap: 9rem;
+  }
+
+  .change-page__back-button,
+  .change-page__next-button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
+  }
 }

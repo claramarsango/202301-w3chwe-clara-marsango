@@ -39,9 +39,19 @@
 @media (min-width: 1440px) {
   .header {
     padding: 2rem;
+    justify-content: space-between;
   }
 
   .header__logo {
     width: 30rem;
+  }
+
+  .header__favourites {
+    font-size: 3rem;
+  }
+
+  .header-favourites__pokeball {
+    width: 8rem;
+    height: 8rem;
   }
 }

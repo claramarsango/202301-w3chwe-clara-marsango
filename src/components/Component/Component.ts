@@ -4,7 +4,7 @@ class Component implements ComponentStructure {
   domElement: HTMLElement;
 
   constructor(
-    private readonly parentElement: HTMLElement,
+    private readonly _parentElement: HTMLElement,
     className: string,
     tag: string,
   ) {
@@ -13,7 +13,7 @@ class Component implements ComponentStructure {
   }
 
   render(): void {
-    this.parentElement.appendChild(this.domElement);
+    this._parentElement.appendChild(this.domElement);
   }
 }
 

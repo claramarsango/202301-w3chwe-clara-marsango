@@ -1,5 +1,4 @@
 import Component from '../Component/Component.js';
-import Button from '../Button/Button.js';
 
 export default class Header extends Component {
   constructor(parentElement: HTMLElement) {

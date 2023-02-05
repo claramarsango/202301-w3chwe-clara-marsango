@@ -1,7 +1,9 @@
+/*Font-face isn't working*/
 @font-face {
   font-family: "vt323regular";
-  src: url("vt323-regular-webfont.woff2") format("woff2"),
-    url("vt323-regular-webfont.woff") format("woff");
+  src: url("../assets/webfontkit-vt323/vt323-regular-webfont.woff2")
+      format("woff2"),
+    url("../assets/webfontkit-vt323/vt323-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -10,11 +12,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "VT323", sans-serif;
 }
 
 body {
   background-color: rgb(195, 23, 23);
+  font-family: "VT323", sans-serif;
 }
 
 .app {

@@ -7,7 +7,7 @@ export interface ComponentStructure {
 export interface Pokemon {
   id: number;
   name: string;
-  baseExperience: number;
+  base_experience: number;
   height: number;
   weight: number;
   types: { type: { name: string } }[];

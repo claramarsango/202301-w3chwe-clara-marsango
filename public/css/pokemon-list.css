@@ -77,6 +77,58 @@
   border-radius: 2rem;
 }
 
+.pokemon-type--normal {
+  background-color: rgb(217, 217, 217);
+}
+
+.pokemon-type--grass {
+  background-color: rgb(37, 163, 37);
+}
+
+.pokemon-type--fire {
+  background-color: rgb(254, 125, 36);
+}
+
+.pokemon-type--water {
+  background-color: rgb(69, 146, 196);
+}
+
+.pokemon-type--bug {
+  background-color: rgb(114, 159, 63);
+}
+
+.pokemon-type--electric {
+  background-color: rgb(239, 213, 54);
+}
+
+.pokemon-type--rock {
+  background-color: rgb(163, 140, 34);
+}
+
+.pokemon-type--ghost {
+  background-color: rgb(123, 98, 163);
+}
+
+.pokemon-type--poison {
+  background-color: rgb(185, 127, 202);
+}
+
+.pokemon-type--pyschic {
+  background-color: rgb(243, 103, 185);
+}
+
+.pokemon-type--fighting {
+  background-color: rgb(213, 103, 36);
+}
+
+.pokemon-type--ground {
+  background-color: rgb(171, 152, 67);
+}
+
+.pokemon-type--dragon {
+  background-color: rgb(241, 110, 85);
+}
+
 .description__favourite {
   height: fit-content;
   background-color: rgba(0, 0, 0, 0);

@@ -5,8 +5,8 @@ class Component implements ComponentStructure {
 
   constructor(
     private readonly _parentElement: HTMLElement,
-    className: string,
     tag: string,
+    className: string = '',
   ) {
     this.domElement = document.createElement(tag);
     this.domElement.className = className;
@@ -14,6 +14,18 @@ class Component implements ComponentStructure {
 
   render(): void {
     this._parentElement.appendChild(this.domElement);
+  }
+
+  updateClass(classInput: string): void {
+    this.domElement.classList.toggle(classInput);
+  }
+
+  remove(): void {
+    this.domElement.remove();
+  }
+
+  registerClick(listener: () => void): void {
+    this.domElement.addEventListener('click', listener);
   }
 }
 

@@ -10,13 +10,17 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
 var _App_children;
+import CardList from '../CardList/CardList.js';
 import Component from '../Component/Component.js';
 import Header from '../Header/Header.js';
 export default class App extends Component {
-    constructor(parentElement) {
+    constructor(parentElement, pokemons) {
         super(parentElement, 'div', 'app');
         _App_children.set(this, void 0);
-        __classPrivateFieldSet(this, _App_children, [new Header(this.domElement)], "f");
+        __classPrivateFieldSet(this, _App_children, [
+            new Header(this.domElement),
+            new CardList(this.domElement, pokemons),
+        ], "f");
     }
     render() {
         super.render();

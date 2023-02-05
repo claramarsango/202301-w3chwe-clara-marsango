@@ -68,6 +68,10 @@
   font-size: 2rem;
 }
 
+.description-title__pokemon-name {
+  text-transform: capitalize;
+}
+
 .description-title__pokemon-type {
   background-color: rgb(37, 163, 37);
   color: white;

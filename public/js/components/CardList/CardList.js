@@ -9,22 +9,23 @@ var __classPrivateFieldGet = (this && this.__classPrivateFieldGet) || function (
     if (typeof state === "function" ? receiver !== state || !f : !state.has(receiver)) throw new TypeError("Cannot read private member from an object whose class did not declare it");
     return kind === "m" ? f : kind === "a" ? f.call(receiver) : f ? f.value : state.get(receiver);
 };
-var _App_children;
-import CardList from '../CardList/CardList.js';
+var _CardList_pokemonList;
 import Component from '../Component/Component.js';
-import Header from '../Header/Header.js';
-export default class App extends Component {
-    constructor(parentElement, pokemons) {
-        super(parentElement, 'div', 'app');
-        _App_children.set(this, void 0);
-        __classPrivateFieldSet(this, _App_children, [
-            new Header(this.domElement),
-            new CardList(this.domElement, pokemons),
-        ], "f");
+import Card from '../Card/Card.js';
+export default class CardList extends Component {
+    constructor(parentElement, pokemonList) {
+        super(parentElement, 'section', 'pokemon-list-container');
+        _CardList_pokemonList.set(this, void 0);
+        __classPrivateFieldSet(this, _CardList_pokemonList, pokemonList, "f");
     }
     render() {
         super.render();
-        __classPrivateFieldGet(this, _App_children, "f").forEach(component => component.render());
+        const myList = document.createElement('ul');
+        myList.className = 'pokemon-list';
+        this.domElement.appendChild(myList);
+        __classPrivateFieldGet(this, _CardList_pokemonList, "f").forEach(pokemon => {
+            new Card(myList, pokemon).render();
+        });
     }
 }
-_App_children = new WeakMap();
+_CardList_pokemonList = new WeakMap();

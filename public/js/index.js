@@ -1,6 +1,5 @@
 import App from './components/App/App.js';
-import { pokemonsList } from './components/get-pokemons-list.js';
-import { getPokemon } from './components/get-pokemons-list.js';
+import { pokemonsList, getPokemon } from './components/get-pokemons-list.js';
 const appContainer = document.body;
 const app = new App(appContainer, pokemonsList);
 getPokemon();

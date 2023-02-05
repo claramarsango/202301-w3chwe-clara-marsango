@@ -1,5 +1,5 @@
 import App from './components/App/App.js';
 
-const appContainer = document.querySelector('.app') as HTMLElement;
+const appContainer = document.body as HTMLElement;
 const app = new App(appContainer);
 app.render();
